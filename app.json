@@ -4,13 +4,13 @@
     "slug": "not",
     "scheme": "novasec",
     "version": "1.0.0",
-     "updates": {
-     "url": "https://u.expo.dev/f07bebb1-6926-4012-9317-2e3404a7cf0c",
-     "fallbackToCacheTimeout": 0
+    "updates": {
+      "url": "https://u.expo.dev/f07bebb1-6926-4012-9317-2e3404a7cf0c",
+      "fallbackToCacheTimeout": 0
     },
-     "runtimeVersion": {
-    "policy": "appVersion"
-    }, 
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "sdkVersion": "54.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -33,7 +33,9 @@
       "permissions": [
         "android.permission.INTERNET",
         "RECEIVE_BOOT_COMPLETED",
-        "VIBRATE"
+        "VIBRATE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
       ]
     },
     "web": {
@@ -56,8 +58,7 @@
       "eas": {
         "projectId": "f07bebb1-6926-4012-9317-2e3404a7cf0c"
       }
-    }
+    },
+    "owner": "novasec"
   }
 }
-
-

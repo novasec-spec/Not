@@ -1,0 +1,30 @@
+name: EAS Update (Cloud OTA)
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
+
+      - name: Run EAS Update
+        run: eas update --branch production --message "auto update from github"
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
