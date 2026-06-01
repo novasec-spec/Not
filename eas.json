@@ -10,7 +10,8 @@
       },
       "env": {
         "NPM_FLAGS": "--legacy-peer-deps"
-      }
+      },
+      "channel": "preview"
     },
     "production": {
       "android": {
@@ -19,7 +20,8 @@
       "autoIncrement": true,
       "env": {
         "NPM_FLAGS": "--legacy-peer-deps"
-      }
+      },
+      "channel": "production"
     }
   }
 }

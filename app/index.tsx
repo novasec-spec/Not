@@ -17,7 +17,7 @@ export default function App() {
 
   const refreshMessage = () => {
     const messages = [
-      "Good morning Sylvia 🌸",
+      "Good morning Alice 🌸",
       "You are doing amazing ❤️",
       "I’m proud of you 💖",
       "Take care today 🌷",
@@ -62,7 +62,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>🌸 Sylvia's Notes</Text>
+      <Text style={styles.title}>🌸 Alice's Notes</Text>
 
       <View style={styles.card}>
         <Text style={styles.label}>Today's Message:</Text>
